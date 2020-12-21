@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "23s2Bo/Aza1gU7/jjfbmHiyVqnkErVvvycxuvFTGe0F6kjaI156Ndquke/KXevU1evvb5NuizvbkUf/epQQPQQ==",
+  "dgSpecHash": "JoWT1WqTTLwyMk90hhrGEUKZguiJ/ed2DATtZD2GItWJQ/0p/E1chtxKN78XlT5Ocmzz0SR4bolD95gdLH8sZA==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\Projeto_MVC_Escola\\Projeto_MVC_Escola.web\\Projeto_MVC_Escola.web.csproj",
   "expectedPackageFiles": [
@@ -169,6 +169,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\joaos\\.nuget\\packages\\netcorepal.aliyun.mns\\1.0.0\\netcorepal.aliyun.mns.1.0.0.nupkg.sha512",
+    "C:\\Users\\joaos\\.nuget\\packages\\netcorepal.aliyun.mns.dependencyinjection\\1.0.0\\netcorepal.aliyun.mns.dependencyinjection.1.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",

@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Projeto_MVC_Escola.web",
+    "\\Projeto_MVC_Escola.web\\Controllers",
+    "\\Projeto_MVC_Escola.web\\Views",
+    "\\Projeto_MVC_Escola.web\\Views\\Home"
   ],
+  "SelectedNode": "\\Projeto_MVC_Escola.web",
   "PreviewInSolutionExplorer": false
 }

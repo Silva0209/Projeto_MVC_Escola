@@ -2601,6 +2601,32 @@
           }
         }
       },
+      "NetCorePal.Aliyun.MNS/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.4.0",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetCorePal.Aliyun.MNS.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetCorePal.Aliyun.MNS.dll": {}
+        }
+      },
+      "NetCorePal.Aliyun.MNS.DependencyInjection/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "NetCorePal.Aliyun.MNS": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetCorePal.Aliyun.MNS.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetCorePal.Aliyun.MNS.DependencyInjection.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -6940,6 +6966,30 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "NetCorePal.Aliyun.MNS/1.0.0": {
+      "sha512": "bIeI5E55moq7kZBKXDsS5d4cKuvGv8XS3otI1kmiPUZGrMipTEh+xEMZwr+n/y1klqQLxnpiwJTNcKYM3cGgzA==",
+      "type": "package",
+      "path": "netcorepal.aliyun.mns/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NetCorePal.Aliyun.MNS.dll",
+        "netcorepal.aliyun.mns.1.0.0.nupkg.sha512",
+        "netcorepal.aliyun.mns.nuspec"
+      ]
+    },
+    "NetCorePal.Aliyun.MNS.DependencyInjection/1.0.0": {
+      "sha512": "do7M7LTccov19tHiHle1/GTb/3uqO+SSfDQH6iM6Sv+jtoWsvJF/tzObpxCgTi4AvMAXvHG0TQ+awo5erPnfNw==",
+      "type": "package",
+      "path": "netcorepal.aliyun.mns.dependencyinjection/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NetCorePal.Aliyun.MNS.DependencyInjection.dll",
+        "netcorepal.aliyun.mns.dependencyinjection.1.0.0.nupkg.sha512",
+        "netcorepal.aliyun.mns.dependencyinjection.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -11793,7 +11843,8 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "NetCorePal.Aliyun.MNS.DependencyInjection >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11853,6 +11904,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "NetCorePal.Aliyun.MNS.DependencyInjection": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [
