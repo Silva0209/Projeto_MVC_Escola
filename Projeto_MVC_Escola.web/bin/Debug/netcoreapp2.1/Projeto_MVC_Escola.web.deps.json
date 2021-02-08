@@ -26,7 +26,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "NetCorePal.Aliyun.MNS.DependencyInjection": "1.0.0"
         },
         "runtime": {
           "Projeto_MVC_Escola.web.dll": {}
@@ -36,6 +37,36 @@
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
+      "NetCorePal.Aliyun.MNS/1.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.5.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetCorePal.Aliyun.MNS.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NetCorePal.Aliyun.MNS.dll": {}
+        }
+      },
+      "NetCorePal.Aliyun.MNS.DependencyInjection/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "NetCorePal.Aliyun.MNS": "1.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetCorePal.Aliyun.MNS.DependencyInjection.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NetCorePal.Aliyun.MNS.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -3171,6 +3202,20 @@
       "sha512": "sha512-fe1+dpy+eM4IX1zodsvkihO1Spuj0NecfStWzvkYoMo7/ziOsqSv4vFK36ZpBfHa4gpdCEwaU46EPzdq+ZDYhQ==",
       "path": "microsoft.aspnetcore.razor.design/2.1.2",
       "hashPath": "microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512"
+    },
+    "NetCorePal.Aliyun.MNS/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bIeI5E55moq7kZBKXDsS5d4cKuvGv8XS3otI1kmiPUZGrMipTEh+xEMZwr+n/y1klqQLxnpiwJTNcKYM3cGgzA==",
+      "path": "netcorepal.aliyun.mns/1.0.0",
+      "hashPath": "netcorepal.aliyun.mns.1.0.0.nupkg.sha512"
+    },
+    "NetCorePal.Aliyun.MNS.DependencyInjection/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-do7M7LTccov19tHiHle1/GTb/3uqO+SSfDQH6iM6Sv+jtoWsvJF/tzObpxCgTi4AvMAXvHG0TQ+awo5erPnfNw==",
+      "path": "netcorepal.aliyun.mns.dependencyinjection/1.0.0",
+      "hashPath": "netcorepal.aliyun.mns.dependencyinjection.1.0.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

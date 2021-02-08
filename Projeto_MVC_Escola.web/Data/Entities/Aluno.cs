@@ -1,21 +1,14 @@
-﻿using System;
+﻿using Projeto_MVC_Escola.web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Projeto_MVC_Escola.web.Data.Entities
 {
-    public class Aluno
+    public class Aluno : Pessoa
     {
-        public int Id { get; set; }
-        public string nome_aluno { get; set; }
-
-        [Display(Name = "Image")]
-        public string ImageUrl { get; set; }
-        public string email_aluno { get; set; }
-        public string morada_aluno { get; set; }
-        public int cp_1_aluno { get; set; }
-        public int cp_2_aluno { get; set; }
+        public Turma Turma { get; set; }
         public int id_turma { get; set; }
     }
 }

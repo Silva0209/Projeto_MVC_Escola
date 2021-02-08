@@ -11848,7 +11848,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\João Silva\\.nuget\\packages\\": {}
+    "C:\\Users\\João Silva\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -11859,9 +11860,13 @@
       "packagesPath": "C:\\Users\\João Silva\\.nuget\\packages\\",
       "outputPath": "C:\\Projetos\\Projeto_MVC_Escola\\Projeto_MVC_Escola.web\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\João Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

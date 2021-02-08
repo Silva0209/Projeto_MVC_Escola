@@ -8,8 +8,11 @@ namespace Projeto_MVC_Escola.web.Models
 {
     public class Curso
     {
-        public int id_curso { get; set; }
+        public int Id { get; set; }
         public string nome_curso { get; set; }
-        public int carga_horaria_curso { get; set; }
+        public DateTime carga_horaria_curso { get; set; }
+        public DateTime data_inicio { get; set; }
+        public DateTime data_fim { get; set; }
+        
     }
 }

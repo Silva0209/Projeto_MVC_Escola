@@ -27,11 +27,11 @@ namespace Projeto_MVC_Escola.web
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<DataContext>(cfg=>
+            services.AddDbContext<DataContext>(cfg =>
             {
                 cfg.UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection"));
             }
-            )
+            );
 
 
             services.Configure<CookiePolicyOptions>(options =>

@@ -1,6 +1,5 @@
 C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\bin\Debug\netcoreapp2.1\appsettings.Development.json
 C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\bin\Debug\netcoreapp2.1\appsettings.json
-C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\bin\Debug\netcoreapp2.1\Projeto_MVC_Escola.web.deps.json
 C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\bin\Debug\netcoreapp2.1\Projeto_MVC_Escola.web.runtimeconfig.json
 C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\bin\Debug\netcoreapp2.1\Projeto_MVC_Escola.web.runtimeconfig.dev.json
@@ -33,3 +32,4 @@ C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\obj\Debug\netcoreapp2.1\Pr
 C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\obj\Debug\netcoreapp2.1\Projeto_MVC_Escola.web.pdb
 C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\obj\Debug\netcoreapp2.1\Projeto_MVC_Escola.web.genruntimeconfig.cache
 C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\obj\Debug\netcoreapp2.1\Projeto_MVC_Escola.web.csproj.CopyComplete
+C:\Projetos\Projeto_MVC_Escola\Projeto_MVC_Escola.web\obj\Debug\netcoreapp2.1\Projeto_MVC_Escola.web.csproj.CoreCompileInputs.cache
