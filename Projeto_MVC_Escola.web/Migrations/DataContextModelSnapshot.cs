@@ -29,33 +29,72 @@ namespace Projeto_MVC_Escola.web.Migrations
 
                     b.Property<int?>("TurmaId");
 
-                    b.Property<string>("cc");
+                    b.Property<string>("cc")
+                        .IsRequired()
+                        .HasMaxLength(8);
 
-                    b.Property<string>("contacto");
+                    b.Property<string>("contacto")
+                        .IsRequired()
+                        .HasMaxLength(9);
 
-                    b.Property<int>("cp_1");
+                    b.Property<string>("cp_1")
+                        .IsRequired()
+                        .HasMaxLength(4);
 
-                    b.Property<int>("cp_2");
+                    b.Property<string>("cp_2")
+                        .IsRequired()
+                        .HasMaxLength(3);
 
-                    b.Property<string>("email");
+                    b.Property<string>("email")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
                     b.Property<string>("genero");
 
                     b.Property<int>("id_turma");
 
-                    b.Property<int>("localidade");
+                    b.Property<string>("localidade")
+                        .IsRequired()
+                        .HasMaxLength(100);
 
-                    b.Property<int>("morada");
+                    b.Property<string>("morada")
+                        .IsRequired()
+                        .HasMaxLength(100);
 
-                    b.Property<string>("nif");
+                    b.Property<string>("nif")
+                        .IsRequired()
+                        .HasMaxLength(9);
 
-                    b.Property<string>("nome");
+                    b.Property<string>("nome")
+                        .IsRequired()
+                        .HasMaxLength(100);
 
                     b.HasKey("Id");
 
                     b.HasIndex("TurmaId");
 
                     b.ToTable("Alunos");
+                });
+
+            modelBuilder.Entity("Projeto_MVC_Escola.web.Data.Entities.Curso", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("carga_horaria_curso");
+
+                    b.Property<DateTime>("data_fim");
+
+                    b.Property<DateTime>("data_inicio");
+
+                    b.Property<string>("nome_curso")
+                        .IsRequired()
+                        .HasMaxLength(30);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cursos");
                 });
 
             modelBuilder.Entity("Projeto_MVC_Escola.web.Data.Entities.Disciplina", b =>
@@ -68,17 +107,22 @@ namespace Projeto_MVC_Escola.web.Migrations
 
                     b.Property<int?>("ProfessorId");
 
-                    b.Property<string>("area_formação");
+                    b.Property<string>("area_formação")
+                        .IsRequired()
+                        .HasMaxLength(30);
 
                     b.Property<DateTime>("carga_horaria_discplina");
 
-                    b.Property<DateTime>("creditos_discplina");
+                    b.Property<int>("creditos_discplina")
+                        .HasMaxLength(8);
 
                     b.Property<int>("id_curso");
 
                     b.Property<int>("id_professor");
 
-                    b.Property<string>("nome_disciplina");
+                    b.Property<string>("nome_disciplina")
+                        .IsRequired()
+                        .HasMaxLength(30);
 
                     b.HasKey("Id");
 
@@ -86,7 +130,34 @@ namespace Projeto_MVC_Escola.web.Migrations
 
                     b.HasIndex("ProfessorId");
 
-                    b.ToTable("Disciplina");
+                    b.ToTable("Disciplinas");
+                });
+
+            modelBuilder.Entity("Projeto_MVC_Escola.web.Data.Entities.Nota", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("AlunoId");
+
+                    b.Property<int?>("DisciplinaId");
+
+                    b.Property<string>("aprovado");
+
+                    b.Property<int>("id_aluno");
+
+                    b.Property<int>("id_disciplina");
+
+                    b.Property<decimal>("nota_final");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AlunoId");
+
+                    b.HasIndex("DisciplinaId");
+
+                    b.ToTable("Notas");
                 });
 
             modelBuilder.Entity("Projeto_MVC_Escola.web.Data.Entities.Professor", b =>
@@ -97,51 +168,50 @@ namespace Projeto_MVC_Escola.web.Migrations
 
                     b.Property<string>("ImageUrl");
 
-                    b.Property<string>("cc");
+                    b.Property<string>("cc")
+                        .IsRequired()
+                        .HasMaxLength(8);
 
-                    b.Property<string>("contacto");
+                    b.Property<string>("contacto")
+                        .IsRequired()
+                        .HasMaxLength(9);
 
-                    b.Property<int>("cp_1");
+                    b.Property<string>("cp_1")
+                        .IsRequired()
+                        .HasMaxLength(4);
 
-                    b.Property<int>("cp_2");
+                    b.Property<string>("cp_2")
+                        .IsRequired()
+                        .HasMaxLength(3);
 
-                    b.Property<string>("email");
+                    b.Property<string>("email")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
                     b.Property<string>("genero");
 
-                    b.Property<int>("localidade");
+                    b.Property<string>("localidade")
+                        .IsRequired()
+                        .HasMaxLength(100);
 
-                    b.Property<int>("morada");
+                    b.Property<string>("morada")
+                        .IsRequired()
+                        .HasMaxLength(100);
 
-                    b.Property<string>("nif");
+                    b.Property<string>("nif")
+                        .IsRequired()
+                        .HasMaxLength(9);
 
-                    b.Property<string>("nome");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Professor");
-                });
-
-            modelBuilder.Entity("Projeto_MVC_Escola.web.Models.Curso", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("carga_horaria_curso");
-
-                    b.Property<DateTime>("data_fim");
-
-                    b.Property<DateTime>("data_inicio");
-
-                    b.Property<string>("nome_curso");
+                    b.Property<string>("nome")
+                        .IsRequired()
+                        .HasMaxLength(100);
 
                     b.HasKey("Id");
 
-                    b.ToTable("Curso");
+                    b.ToTable("Professores");
                 });
 
-            modelBuilder.Entity("Projeto_MVC_Escola.web.Models.Turma", b =>
+            modelBuilder.Entity("Projeto_MVC_Escola.web.Data.Entities.Turma", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -151,7 +221,9 @@ namespace Projeto_MVC_Escola.web.Migrations
 
                     b.Property<int>("id_curso");
 
-                    b.Property<string>("nome_turma");
+                    b.Property<string>("nome_turma")
+                        .IsRequired()
+                        .HasMaxLength(10);
 
                     b.HasKey("Id");
 
@@ -162,14 +234,14 @@ namespace Projeto_MVC_Escola.web.Migrations
 
             modelBuilder.Entity("Projeto_MVC_Escola.web.Data.Entities.Aluno", b =>
                 {
-                    b.HasOne("Projeto_MVC_Escola.web.Models.Turma", "Turma")
+                    b.HasOne("Projeto_MVC_Escola.web.Data.Entities.Turma", "Turma")
                         .WithMany()
                         .HasForeignKey("TurmaId");
                 });
 
             modelBuilder.Entity("Projeto_MVC_Escola.web.Data.Entities.Disciplina", b =>
                 {
-                    b.HasOne("Projeto_MVC_Escola.web.Models.Curso", "Curso")
+                    b.HasOne("Projeto_MVC_Escola.web.Data.Entities.Curso", "Curso")
                         .WithMany()
                         .HasForeignKey("CursoId");
 
@@ -178,9 +250,20 @@ namespace Projeto_MVC_Escola.web.Migrations
                         .HasForeignKey("ProfessorId");
                 });
 
-            modelBuilder.Entity("Projeto_MVC_Escola.web.Models.Turma", b =>
+            modelBuilder.Entity("Projeto_MVC_Escola.web.Data.Entities.Nota", b =>
                 {
-                    b.HasOne("Projeto_MVC_Escola.web.Models.Curso", "Curso")
+                    b.HasOne("Projeto_MVC_Escola.web.Data.Entities.Aluno", "Aluno")
+                        .WithMany()
+                        .HasForeignKey("AlunoId");
+
+                    b.HasOne("Projeto_MVC_Escola.web.Data.Entities.Disciplina", "Disciplina")
+                        .WithMany()
+                        .HasForeignKey("DisciplinaId");
+                });
+
+            modelBuilder.Entity("Projeto_MVC_Escola.web.Data.Entities.Turma", b =>
+                {
+                    b.HasOne("Projeto_MVC_Escola.web.Data.Entities.Curso", "Curso")
                         .WithMany()
                         .HasForeignKey("CursoId");
                 });

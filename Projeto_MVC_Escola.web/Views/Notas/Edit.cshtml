@@ -1,0 +1,47 @@
+﻿@model Projeto_MVC_Escola.web.Models.NotaViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<h4>NotaViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="id_aluno" class="control-label"></label>
+                <input asp-for="id_aluno" class="form-control" />
+                <span asp-validation-for="id_aluno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="id_disciplina" class="control-label"></label>
+                <input asp-for="id_disciplina" class="form-control" />
+                <span asp-validation-for="id_disciplina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nota_final" class="control-label"></label>
+                <input asp-for="nota_final" class="form-control" />
+                <span asp-validation-for="nota_final" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="aprovado" class="control-label"></label>
+                <input asp-for="aprovado" class="form-control" />
+                <span asp-validation-for="aprovado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

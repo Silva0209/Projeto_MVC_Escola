@@ -1,0 +1,85 @@
+﻿@model Projeto_MVC_Escola.web.Models.ProfessorViewModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProfessorViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.genero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.genero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.cc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.cc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nif)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nif)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.contacto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.contacto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.morada)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.morada)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.localidade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.localidade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.cp_1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.cp_1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.cp_2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.cp_2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ImageUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

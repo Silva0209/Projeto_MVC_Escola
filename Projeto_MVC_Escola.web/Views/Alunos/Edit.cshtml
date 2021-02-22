@@ -1,0 +1,87 @@
+﻿@model Projeto_MVC_Escola.web.Models.AlunoViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<h4>AlunoViewModel</h4>
+<hr />
+<div class="row" align="center">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="id_turma" class="control-label"></label>
+                <input asp-for="id_turma" class="form-control" />
+                <span asp-validation-for="id_turma" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="nome" class="control-label"></label>
+                <input asp-for="nome" class="form-control" />
+                <span asp-validation-for="nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="genero" class="control-label"></label>
+                <input asp-for="genero" class="form-control" />
+                <span asp-validation-for="genero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cc" class="control-label"></label>
+                <input asp-for="cc" class="form-control" />
+                <span asp-validation-for="cc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nif" class="control-label"></label>
+                <input asp-for="nif" class="form-control" />
+                <span asp-validation-for="nif" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="contacto" class="control-label"></label>
+                <input asp-for="contacto" class="form-control" />
+                <span asp-validation-for="contacto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="morada" class="control-label"></label>
+                <input asp-for="morada" class="form-control" />
+                <span asp-validation-for="morada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="localidade" class="control-label"></label>
+                <input asp-for="localidade" class="form-control" />
+                <span asp-validation-for="localidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cp_1" class="control-label"></label>
+                <input asp-for="cp_1" class="form-control" />
+                <span asp-validation-for="cp_1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cp_2" class="control-label"></label>
+                <input asp-for="cp_2" class="form-control" />
+                <span asp-validation-for="cp_2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

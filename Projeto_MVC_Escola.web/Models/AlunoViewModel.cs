@@ -1,4 +1,5 @@
-﻿using Projeto_MVC_Escola.web.Data.Entities;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Projeto_MVC_Escola.web.Data.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,7 @@ namespace Projeto_MVC_Escola.web.Models
 {
     public class AlunoViewModel : Aluno
     {
+        public IEnumerable<SelectListItem> turmas { get; set; }
 
     }
 }

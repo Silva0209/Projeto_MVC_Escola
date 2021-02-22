@@ -1,0 +1,57 @@
+﻿@model Projeto_MVC_Escola.web.Models.DisciplinaViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<h4>DisciplinaViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="nome_disciplina" class="control-label"></label>
+                <input asp-for="nome_disciplina" class="form-control" />
+                <span asp-validation-for="nome_disciplina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="area_formação" class="control-label"></label>
+                <input asp-for="area_formação" class="form-control" />
+                <span asp-validation-for="area_formação" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="carga_horaria_discplina" class="control-label"></label>
+                <input asp-for="carga_horaria_discplina" class="form-control" />
+                <span asp-validation-for="carga_horaria_discplina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="creditos_discplina" class="control-label"></label>
+                <input asp-for="creditos_discplina" class="form-control" />
+                <span asp-validation-for="creditos_discplina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="id_curso" class="control-label"></label>
+                <input asp-for="nome_disciplina" class="form-control" />
+                <span asp-validation-for="nome_disciplina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="id_professor" class="control-label"></label>
+                <input asp-for="id_professor" class="form-control" />
+                <span asp-validation-for="id_professor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
