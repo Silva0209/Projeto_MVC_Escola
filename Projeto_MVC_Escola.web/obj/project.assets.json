@@ -12728,11 +12728,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\João Silva\\Desktop\\PROJETO MVC\\Projeto_MVC_Escola\\Projeto_MVC_Escola.web\\Projeto_MVC_Escola.web.csproj",
+      "projectUniqueName": "C:\\Users\\João Silva\\Desktop\\PROJETO MVC\\git\\Projeto_MVC_Escola.web\\Projeto_MVC_Escola.web.csproj",
       "projectName": "Projeto_MVC_Escola.web",
-      "projectPath": "C:\\Users\\João Silva\\Desktop\\PROJETO MVC\\Projeto_MVC_Escola\\Projeto_MVC_Escola.web\\Projeto_MVC_Escola.web.csproj",
+      "projectPath": "C:\\Users\\João Silva\\Desktop\\PROJETO MVC\\git\\Projeto_MVC_Escola.web\\Projeto_MVC_Escola.web.csproj",
       "packagesPath": "C:\\Users\\João Silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\João Silva\\Desktop\\PROJETO MVC\\Projeto_MVC_Escola\\Projeto_MVC_Escola.web\\obj\\",
+      "outputPath": "C:\\Users\\João Silva\\Desktop\\PROJETO MVC\\git\\Projeto_MVC_Escola.web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
